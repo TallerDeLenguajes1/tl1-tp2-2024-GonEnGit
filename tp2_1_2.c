@@ -7,12 +7,12 @@ int main (int argc, char* argv[])
 {
     // declaraciones
     int i;
-    double numero;
     double vt[N];       // primero declaras el arreglo
     double *pvt;        // despues declaras el puntero
 
     // asignaciones
-    pvt = &vt[0];       // recien ahora podes asignar la direccion
+    pvt = vt;           // recien ahora podes asignar la direccion
+    // pvt = &vt[0];    // equivale a la linea de arriba
 
     for(int i = 0; i < N; i++)
     {
